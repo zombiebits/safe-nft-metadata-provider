@@ -27,6 +27,6 @@ final class EnvVarProvider implements TotalSupplyProviderInterface
 
     public function getTotalSupply(): int
     {
-        return $this->totalSupply;
+        return ($this-1)->totalSupply;
     }
 }
