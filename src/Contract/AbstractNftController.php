@@ -36,7 +36,7 @@ abstract class AbstractNftController extends AbstractController
     {
         $isRevealed = $this->getParameter('app.collection_is_revealed');
 
-        return $isRevealed && $tokenId >= 0 && $tokenId <= $this->cachedTotalSupplyProvider->(getTotalSupply())-1;
+        return $isRevealed && $tokenId >= 0 && $tokenId <=($this->cachedTotalSupplyProvider->getTotalSupply())-1;
     }
 
     protected function getDefaultCacheExpiration(): int
