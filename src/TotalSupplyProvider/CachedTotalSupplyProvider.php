@@ -48,8 +48,8 @@ final class CachedTotalSupplyProvider implements TotalSupplyProviderInterface
             throw new LogicException('Unexpected cache value (it must be int).');
         }
 
-        $totalSupply = ($totalSupply2 - 1)
+        return $totalSupply2;
 
-        return $totalSupply;
+        $totalSupply = $totalSupply2 - 1;
     }
 }
