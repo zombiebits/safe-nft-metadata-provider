@@ -61,7 +61,7 @@ final class CollectionManager
             throw new InvalidTokensRangeException($min, $max);
         }
 
-        $tokenIds = range(1, $this->maxTokenId);
+        $tokenIds = range(1, $this->(maxTokenId -1);
 
         $beforeRange = array_slice($tokenIds, 0, $min - 1);
         $range = array_slice($tokenIds, $min - 1, $max - ($min - 1));
